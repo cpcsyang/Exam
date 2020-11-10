@@ -1,0 +1,1873 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 1.1.0'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Test 3, Java Nitro, Boolean Expressions &amp; IF Statements</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Arial", "Helvetica", sans-serif; color:#000000; }
+		.qnumber { font-size:10pt; font-family:"Arial", "Helvetica", sans-serif; color:#000000; text-align:right; }
+		.choice { font-size:10pt; font-family:"Arial", "Helvetica", sans-serif; color:#000000; }
+		.default { font-size:10pt; font-family:"Arial", "Helvetica", sans-serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#0000FF; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#0000FF; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Arial", "Helvetica", sans-serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Courier New", "Courier", monospace; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '11111111111111111111111111111111111111111111111111111';
+	var qtypeMap = '22222222222222222222222222222222222288888888888888888';
+	var ansMap = new Array(53);
+	var ptsMap = new Array(53);
+	ansMap[0] = '43';
+	ptsMap[0] = 1;
+	ansMap[1] = '40';
+	ptsMap[1] = 1;
+	ansMap[2] = '40';
+	ptsMap[2] = 1;
+	ansMap[3] = '46';
+	ptsMap[3] = 1;
+	ansMap[4] = '46';
+	ptsMap[4] = 1;
+	ansMap[5] = '44';
+	ptsMap[5] = 1;
+	ansMap[6] = '44';
+	ptsMap[6] = 1;
+	ansMap[7] = '4a';
+	ptsMap[7] = 1;
+	ansMap[8] = '4b';
+	ptsMap[8] = 1;
+	ansMap[9] = '49';
+	ptsMap[9] = 1;
+	ansMap[10] = '4a';
+	ptsMap[10] = 1;
+	ansMap[11] = '4e';
+	ptsMap[11] = 1;
+	ansMap[12] = '4c';
+	ptsMap[12] = 1;
+	ansMap[13] = '4a';
+	ptsMap[13] = 1;
+	ansMap[14] = '4b';
+	ptsMap[14] = 1;
+	ansMap[15] = '52';
+	ptsMap[15] = 1;
+	ansMap[16] = '53';
+	ptsMap[16] = 1;
+	ansMap[17] = '53';
+	ptsMap[17] = 1;
+	ansMap[18] = '52';
+	ptsMap[18] = 1;
+	ansMap[19] = '55';
+	ptsMap[19] = 1;
+	ansMap[20] = '57';
+	ptsMap[20] = 1;
+	ansMap[21] = '57';
+	ptsMap[21] = 1;
+	ansMap[22] = '53';
+	ptsMap[22] = 1;
+	ansMap[23] = '5b';
+	ptsMap[23] = 1;
+	ansMap[24] = '58';
+	ptsMap[24] = 1;
+	ansMap[25] = '5b';
+	ptsMap[25] = 1;
+	ansMap[26] = '59';
+	ptsMap[26] = 1;
+	ansMap[27] = '5e';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '5c';
+	ptsMap[29] = 1;
+	ansMap[30] = '5c';
+	ptsMap[30] = 1;
+	ansMap[31] = '40';
+	ptsMap[31] = 1;
+	ansMap[32] = '40';
+	ptsMap[32] = 1;
+	ansMap[33] = '42';
+	ptsMap[33] = 1;
+	ansMap[34] = '40';
+	ptsMap[34] = 1;
+	ansMap[35] = '40';
+	ptsMap[35] = 1;
+	ansMap[36] = '47';
+	ptsMap[36] = 1;
+	ansMap[37] = '45';
+	ptsMap[37] = 1;
+	ansMap[38] = '4b';
+	ptsMap[38] = 1;
+	ansMap[39] = '4d';
+	ptsMap[39] = 1;
+	ansMap[40] = '4f';
+	ptsMap[40] = 1;
+	ansMap[41] = '4d';
+	ptsMap[41] = 1;
+	ansMap[42] = '4b';
+	ptsMap[42] = 1;
+	ansMap[43] = '45';
+	ptsMap[43] = 1;
+	ansMap[44] = '47';
+	ptsMap[44] = 1;
+	ansMap[45] = '45';
+	ptsMap[45] = 1;
+	ansMap[46] = '5b';
+	ptsMap[46] = 1;
+	ansMap[47] = '5d';
+	ptsMap[47] = 1;
+	ansMap[48] = '50';
+	ptsMap[48] = 1;
+	ansMap[49] = '51';
+	ptsMap[49] = 1;
+	ansMap[50] = '55';
+	ptsMap[50] = 1;
+	ansMap[51] = '57';
+	ptsMap[51] = 1;
+	ansMap[52] = '57';
+	ptsMap[52] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(java_nitro_-_test_3_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.107.70421'>
+<input type='hidden' name='instructor_name' value='Frank Yang'>
+<input type='hidden' name='instructor_formalname' value='Frank Yang'>
+<input type='hidden' name='instructor_email' value='frank.yang@cedarpark.org'>
+<input type='hidden' name='instructor_org' value='Cedar Park'>
+<input type='hidden' name='instructor_city' value='Bothell'>
+<input type='hidden' name='instructor_state' value='WA'>
+<input type='hidden' name='test_name' value='Test 3, Java Nitro, Boolean Expressions & IF Statements'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='0'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='0'>
+<input type='hidden' name='score_details' value=''>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Test 3, Java Nitro, Boolean Expressions &amp; IF Statements</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b><span style='font-size:12pt'>Multiple Choice</span></b><span
+class='font2'><br></span><i>Identify the choice that best completes the statement or answers the
+question.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is NOT a relational operator?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>&lt;</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'><span class='font3'>?</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'><span
+class='font3'>==</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'><span
+class='font3'>&gt;=</span></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does this Java expression evaluate to?<br><span class='font3'>80 &gt;=
+80</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>&quot;true&quot;</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>true </span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>false</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>This expression will
+error</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider the code snippet below.<br><span class='font3'>String name =
+&quot;Karel&quot;;<br>String checkName = new String(&quot;Karel&quot;);<br><br>boolean nameMatches =
+name == checkName;</span><br>Note that we forced Java to create a new <span
+class='font3'>String</span> object by using new and calling the <span class='font3'>String</span>
+constructor.&nbsp; Recall that if you set two <span class='font3'>String</span> variables to the same
+<span class='font3'>String</span> literal, Java tries to be efficient and uses the same object.&nbsp;
+With this in mind, what will the value of <span class='font3'>nameMatches</span> be?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Cannot be determined.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>true</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>false</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>&#8220;true&#8221;</span></td></tr><tr
+valign='baseline'><td><div class='choice'>E</div></td><td><span
+class='default'>&#8220;false&#8221;</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the difference between == and = ?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>== is used for assignment, while = is used to check for equality.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>B</div></td><td><span class='default'>= is used for
+assignment, while == is used to check for equality.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'>== assigns values to objects while = assigns
+values to primitives.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>There is no difference. These symbols can be
+used interchangeably.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following symbols is the &#8220;not equal&#8221; symbol?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>==</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'><span class='font3'>not
+=</span></span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'><span class='font3'>!=</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'><span
+class='font3'>&lt;&gt;</span></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Why do we use <span class='font3'>if</span> statements in Java?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>To break out of some block of code</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>To do something only if a condition is
+true</span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>To do something while a condition is true</span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span class='default'>To repeat something
+for a fixed number of times</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which <span class='font3'>if</span> statement is written properly?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>if (boolean expression):<br>&nbsp;&nbsp;&nbsp; // code to
+execute<br>&nbsp;&nbsp;&nbsp; // code to execute</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>B</div></td><td><span class='default'><span
+class='font3'>if boolean expression<br>{<br>&nbsp;&nbsp;&nbsp; // code to
+execute<br>&nbsp;&nbsp;&nbsp; // code to execute<br>}</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'><span
+class='font3'>if(boolean expression)<br>{<br>&nbsp;&nbsp;&nbsp; // code to
+execute<br>&nbsp;&nbsp;&nbsp; // code to execute<br>}</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span class='default'><span
+class='font3'>if boolean expression<br>&#091;<br>&nbsp;&nbsp;&nbsp; // code to
+execute<br>&nbsp;&nbsp;&nbsp; // code to execute<br>&#093;</span></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of this program?<br><span class='font3'>int phLevel =
+9;<br>if(phLevel &lt; 7)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;It is
+acidic!&quot;);<br>}<br>if(phLevel &gt; 7)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;It is
+basic!&quot;);<br>}<br>if(phLevel == 7)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;It is
+neutral!&quot;);&nbsp;&nbsp;&nbsp; <br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>It is acidic!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>It is basic!</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It is
+neutral!</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>It is acidic!<br>It is basic!<br>It is neutral!</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of this program?<br><span class='font3'>int numTreeRings =
+50;<br>System.out.println(&quot;How old is the tree?&quot;);<br>if(numTreeRings &gt;
+10)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Still young!&quot;);<br>}<br>if(numTreeRings
+&gt; 40)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Pretty
+old!&quot;);<br>}<br>if(numTreeRings &gt; 150)<br>{<br>&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;Very old!&quot;);<br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>How old is the tree?<br>Still young!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>How old is the tree?<br>Still young!<br>Pretty
+old!<br></span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>How old is the tree?<br>Very old!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>How old is the tree?<br>Still young!<br>Pretty
+old!<br>Very old!</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of this program?<br><span class='font3'>int numTreeRings =
+50;<br>System.out.println(&quot;How old is the tree?&quot;);<br>if(numTreeRings &lt;
+20)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Still young!&quot;);<br>}<br>if(numTreeRings
+&lt; 50)<br>{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Pretty
+old!&quot;);<br>}<br>if(numTreeRings &lt; 100)<br>{<br>&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;Very old!&quot;);<br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>How old is the tree?<br>Still young!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>How old is the tree?<br>Pretty old!<br>Very
+old!</span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>How old is the tree?<br>Very old!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>How old is the tree?<br>Still young!<br>Pretty
+old!<br>Very old!</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider the following code snippet:<br><span class='font3'>if ( x ==
+y)<br>{<br>&nbsp;&nbsp;&nbsp; // Statement A<br>} <br>else <br>{<br>&nbsp;&nbsp;&nbsp; // Statement
+B<br>}</span><br>Which statement will be executed if x = 3 and y = 3?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Statement A</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Statement B</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>Statement A and
+Statement B</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>Impossible to tell</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider the following code snippet<br><span class='font3'>if ( x ==
+y)<br>{<br>&nbsp;&nbsp;&nbsp; // Statement A<br>} <br>else <br>{<br>&nbsp;&nbsp;&nbsp; // Statement
+B<br>}</span><br>Which statement will be executed if x = 15 and y = 20?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Statement A</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Statement B</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>Statement A and
+Statement B</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>Impossible to tell</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Choose the answer that will always produce the same output as the if-else
+statement below. Assume that <span class='font3'>grams</span> is an <span class='font3'>int</span>
+variable that has been declared and initialized earlier in the program.<br><span class='font3'>if (
+grams &lt; 130) {<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Your hamster is a healthy
+weight&quot;);<br>} else {<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Your hamster is
+overweight&quot;);<br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>if(grams &lt; 130) {<br>&nbsp;&nbsp;
+System.out.println(&quot;Your hamster is a healthy weight&quot;);&nbsp;&nbsp; <br>}<br>if(grams &gt;=
+130) {<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Your hamster is
+overweight&quot;);<br>}</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'><span class='font3'>if(grams == 130)
+{<br>&nbsp;&nbsp; System.out.println(&quot;Your hamster is a healthy weight&quot;);&nbsp;&nbsp;
+<br>}<br>if(grams != 130) {<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Your hamster is
+overweight&quot;);<br>}</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'><span class='font3'>if(grams &lt; 130)
+{<br>&nbsp;&nbsp; System.out.println(&quot;Your hamster is a healthy weight&quot;);&nbsp;&nbsp;
+<br>}<br>System.out.println(&quot;Your hamster is
+overweight&quot;);</span></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of this code?<span class='font3'><br>String firstName =
+&quot;Karel&quot;;<br>String lastName = &quot;The Dog&quot;;<br>if(firstName.length() &gt;
+lastName.length()) {<br>&nbsp;&nbsp;&nbsp; System.out.println(firstName + &quot; is longer than
+&quot; + lastName);<br>} else {<br>&nbsp;&nbsp;&nbsp; System.out.println(lastName + &quot; is longer
+than &quot; + firstName);&nbsp;&nbsp;&nbsp; <br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>lastName is longer than firstName</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Karel is longer than The Dog<br>The Dog is
+longer than Karel</span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>Karel is longer than The Dog</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>The Dog is longer than
+Karel</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following statements is true?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>There can only be one else-if statement in an if-else if
+statement.</span></td></tr><tr valign='baseline'><td><div class='choice'>B</div></td><td><span
+class='default'>An if- else if statement must always have an else clause.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>An if- else if
+statement cannot have an else clause.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>An if- else if statement must always start with
+an if statement.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of the following code snippet?<br><span class='font3'>char
+combo = &#039;B&#039;;<br>if(combo == &#039;A&#039;) {<br>&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;Tamale it is!&quot;);<br>} else if (combo == &#039;B&#039;)
+{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;Quesadilla it is!&quot;);<br>} else
+{<br>&nbsp;&nbsp;&nbsp; System.out.println(&quot;That is not a combo of
+ours&quot;);&nbsp;&nbsp;&nbsp; <br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Tamale it is!</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Quesadilla it is!</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>That is not a combo
+of ours</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>Tamale it is!<br>Quesadilla it is!</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the output of the following code snippet?<br><span class='font3'>double
+ticketPrice = 12.75;<br>if(ticketPrice &gt; 15) {<br>&nbsp;&nbsp; System.out.println(&quot;Too
+expensive!&quot;);<br>} else if(ticketPrice &gt; 10) {<br>&nbsp;&nbsp;
+System.out.println(&quot;Typical&quot;);<br>} else if(ticketPrice &gt; 5) {<br>&nbsp;&nbsp;
+System.out.println(&quot;Great deal!&quot;);<br>} else&nbsp; {<br>&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;Must be a scam&quot;);<br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Too expensive!<br>Typical</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Typical</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>Must be a
+scam</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>Typical<br>Great deal</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The following code snippet should print the letter grade associated with the
+integer value in grade.<br>However, the if .- else if statements are in the wrong order.<br><br><span
+class='font3'>(A)<br>else if (grade &lt; 80) {<br>&nbsp;&nbsp;
+System.out.println(&quot;C&quot;);<br>}<br>(B)<br>else&nbsp; {<br>&nbsp;&nbsp;
+System.out.println(&quot;A&quot;);<br>}<br>(C)<br>if(grade &lt; 70) {<br>&nbsp;&nbsp;
+System.out.println(&quot;D&quot;);<br>}<br>(D)<br>else if (grade &lt; 90) {<br>&nbsp;&nbsp;
+System.out.println(&quot;B&quot;);<br>}</span><br>What order should these statements be in such that
+the letter grade is A if the grade is above 90, B if the grade is between 80 and 90, C if the grade
+is between 70 and 80, and D if the grade is less than 70?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>C, A, D, B</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>D, A, C, B</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>C, D, A,
+B</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>A, B, C, D</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the below is a logical operator?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>!</span></td></tr><tr valign='baseline'><td><div class='choice'>B</div></td><td><span
+class='default'>##</span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'>**</span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>%</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does this Java expression evaluate to?<br><span class='font3'>true
+&amp;&amp; !false</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>true</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>false</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the following line of code:<br><span class='font3'>boolean shortCircuit =
+true || (5 / 0 == 0);</span><br>Will the <span class='font3'>5 / 0 == 0</span> operation be
+evaluated?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Yes</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>No</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the following line of code:<br><span class='font3'>boolean shortCircuit =
+true &amp;&amp; (5 / 0 == 0);</span><br>Will the<span class='font3'> 5 / 0 == 0</span> operation be
+evaluated?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Yes</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>No</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:23' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What value of <span class='font3'>x </span>would make this boolean expression
+evaluate to <span class='font3'>false</span>?<br><span class='font3'>(x &lt; 10) &amp;&amp; (x !=
+5)</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>Any value less than 10</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>Any value less than 10 except for
+5</span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>The only time it is false is when x = 5.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span class='default'>Any value greater
+than or equal to 10</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:24' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following logical statements is equivalent to<br><span
+class='font3'>!(A &amp;&amp; B)<br></span>Where A and B are boolean values</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>!A &amp;&amp; B</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>!A &amp;&amp; !B</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>!A ||
+!B</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>!A || B</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:25' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following logical statements is equivalent to<br><span
+class='font3'>!(A || B)</span><br>Where A and B are boolean values</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>!A &amp;&amp; !B</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>!A || !B</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>!A ||
+B</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>A &amp;&amp; B</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:26' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What boolean value is held in the following boolean variable if <span
+class='font3'>hasBike</span> is true and <span class='font3'>hasHelmet</span> is false?<br><span
+class='font3'>boolean cannotBike = !(hasBike &amp;&amp; hasHelmet);</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>True</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>False</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What boolean value is held in the following boolean variable if <span
+class='font3'>hasHeadlight</span> is true and <span class='font3'>hasBikelight</span> is
+false?<br><span class='font3'>boolean cannotNightBike = !(hasHeadlight ||
+hasBikelight);</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>True</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>False</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Given the following Circle class<br><span class='font3'>public class Circle
+{<br>&nbsp;&nbsp;&nbsp; private int radius;<br>&nbsp;&nbsp;&nbsp; public Circle(int theRadius)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radius = theRadius;<br>&nbsp;&nbsp;&nbsp;
+}<br>&nbsp;&nbsp;&nbsp; public void setRadius(int newRadius)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radius = newRadius;<br>&nbsp;&nbsp;&nbsp;
+}<br>&nbsp;&nbsp;&nbsp; public boolean equals(Circle other)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return radius == other.radius;<br>&nbsp;&nbsp;&nbsp;
+}<br>}</span><br>What is the output of the following code snippet?<br><span class='font3'>Circle one
+= new Circle(10);<br>Circle two = new Circle(10);<br>System.out.println(one == two);</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>true</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>false</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Given the following Circle class<br><br><span class='font3'>public class Circle
+{<br>&nbsp;&nbsp;&nbsp; private int radius;<br>&nbsp;&nbsp;&nbsp; public Circle(int theRadius)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radius = theRadius;<br>&nbsp;&nbsp;&nbsp;
+}<br>&nbsp;&nbsp;&nbsp; public void setRadius(int newRadius)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radius = newRadius;<br>&nbsp;&nbsp;&nbsp;
+}<br>&nbsp;&nbsp;&nbsp; public boolean equals(Circle other)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return radius == other.radius;<br>&nbsp;&nbsp;&nbsp;
+}<br>}<br></span>What is the output of the following code snippet?<span class='font3'><br>public void
+run() {<br>&nbsp;&nbsp;&nbsp; Circle one = new Circle(5);<br>&nbsp;&nbsp;&nbsp; Circle two = new
+Circle(10);<br>&nbsp;&nbsp;&nbsp; foo(two);<br>&nbsp;&nbsp;&nbsp;
+System.out.println(one.equals(two));<br>}<br>public void foo(Circle x) {<br>&nbsp;&nbsp;&nbsp;
+x.setRadius(5);<br>}</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>true</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>false</span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'>It produces
+error.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the proper way to compare <span class='font3'>String</span> values in
+Java?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>The <span class='font3'>==</span> operator</span></td></tr><tr
+valign='baseline'><td><div class='choice'>B</div></td><td><span class='default'>The <span
+class='font3'>.equals() </span>String method</span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'>The <span class='font3'>=</span>
+operator</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>The <span class='font3'>| </span>operator</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following Boolean expressions will yield true after the code
+snippet executes?<br><span class='font3'>String str1 = new String(&quot;Karel&quot;);<br>String str2
+= &quot;CodeHS&quot;;<br>String str3 = &quot;Karel&quot;;<br>str2 = str1;</span></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>str1 == str2 &amp;&amp; str1 == str3</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>B</div></td><td><span class='default'><span
+class='font3'>str1 != str2 &amp;&amp; str1.equals(str3)</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>C</div></td><td><span class='default'><span
+class='font3'>str1 == str2 &amp;&amp; str1.equals(str3)</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span class='default'>None of the above
+will evaluate to true after this code snippet executes.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Reference equality uses the equality operator (==) and compares the references
+(addresses in memory) of two objects.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>True</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:33' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Logical equality compares the data of the objects.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>False</span></td></tr><tr valign='baseline'><td><div
+class='choice'>B</div></td><td><span class='default'>True</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:34' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><br>Which of the following <span class='font3'>if</span> statement headers uses
+the correct syntax?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'><span class='font3'>if (x == y) {</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>B</div></td><td><span class='default'><span
+class='font3'>if (x =&gt; y) {</span></span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'><span class='font3'>if (x equals 42)
+{</span></span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'><span class='font3'>if &#091;x == 10&#093; {</span></span></td></tr><tr
+valign='baseline'><td><div class='choice'>E</div></td><td><span class='default'><span
+class='font3'>if x = 10 then {</span></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:35' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider the following code segment.<br><span class='font3'>for (int j = 0; j
+&lt; 10; j++) {<br>&nbsp;&nbsp;&nbsp;&nbsp; for (int k = 10; k &gt; j; k--)
+{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.print(&#8220;*&#8221;);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}<br></span>How many
+&#8220;*&#8221; symbols are printed as a result of executing the code segment?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>5</span></td></tr><tr valign='baseline'><td><div class='choice'>B</div></td><td><span
+class='default'>10</span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'>45</span></td></tr><tr
+valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>55</span></td></tr><tr valign='baseline'><td><div
+class='choice'>E</div></td><td><span class='default'>100</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:36' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider the following code segment.<br><span class='font3'>boolean b1 =
+true;<br>boolean b2 = true;<br>int x = 7;<br>while (b1 || b2) {<br>&nbsp;&nbsp;&nbsp;&nbsp; if (x
+&gt; 4) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b2 =
+!b2;<br>&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+b1 = !b1;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}<br>System.out.print(x);</span><br>What is printed as a
+result of executing the code segment?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>A</div></td><td width='96%'><span
+class='default'>3</span></td></tr><tr valign='baseline'><td><div class='choice'>B</div></td><td><span
+class='default'>4</span></td></tr><tr valign='baseline'><td><div class='choice'>C</div></td><td><span
+class='default'>6</span></td></tr><tr valign='baseline'><td><div class='choice'>D</div></td><td><span
+class='default'>7</span></td></tr><tr valign='baseline'><td><div class='choice'>E</div></td><td><span
+class='default'>Nothing will be printed. Infinite loop.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b><span style='font-size:12pt'>Matching</span></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>Translate each of the following English statements into logical tests that could
+be used in an if/else statement. Write the appropriate logical test for each statement below. Assume
+that three int variables, x, y, and z, have already been declared.</div><div class='default'><table
+cellpadding='0' cellspacing='0' width='95%' border='0'><tr valign='baseline'><td width='4%'><div
+class='choice'>A</div></td><td width='46%'><span class='default'>z % 2 != 0</span></td><td
+width='4%'><div class='choice'>G</div></td><td width='46%'><span class='default'>Math.abs(y) &gt;
+Math.abs(z)</span></td></tr><tr valign='baseline'><td><div class='choice'>B</div></td><td><span
+class='default'>z &lt;= Math.sqrt(y)</span></td><td><div class='choice'>H</div></td><td><span
+class='default'>x * z &lt; 0</span></td></tr><tr valign='baseline'><td><div
+class='choice'>C</div></td><td><span class='default'>y &gt; 0</span></td><td><div
+class='choice'>I</div></td><td><span class='default'>y &gt;= 0 &amp;&amp; (int) (y % 10) == (int)
+y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td></tr><tr valign='baseline'><td><div
+class='choice'>D</div></td><td><span class='default'>(x + y) % 2 == 1</span></td><td><div
+class='choice'>J</div></td><td><span class='default'>z &gt;= 0</span></td></tr><tr
+valign='baseline'><td><div class='choice'>E</div></td><td><span class='default'>y % z ==
+0</span></td><td><div class='choice'>K</div></td><td><span class='default'>x % 2 ==
+0</span></td></tr><tr valign='baseline'><td><div class='choice'>F</div></td><td><span
+class='default'>z != 0</span></td><td><div class='choice'>L</div></td><td><span
+class='default'>Math.abs(x - y) &lt; Math.abs(x - z)</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:37' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>z is odd.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:38' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>z is not greater than y&#039;s square root.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:39' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>y is positive.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:40' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Either x or y is even, and the other is odd. (Hint: Don&#039;t use &amp;&amp;
+or ||.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:41' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;41.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>y is a multiple of z.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:42' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;42.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>z is not zero.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:43' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;43.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>y is greater in magnitude than z.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:44' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;44.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>x and z are of opposite signs.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:45' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;45.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>y is a nonnegative one-digit number.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:46' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;46.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>z is nonnegative.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:47' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;47.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>x is even</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:48' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+			<option value='K'>K
+			<option value='L'>L
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;48.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>l. x is closer in value to y than z is.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>Assume that x, y and&nbsp; have been declared as follows:<br><span
+class='font3'>boolean x = true;<br>boolean y = false;<br>boolean z = true;</span><br>What do the
+following expressions evaluates to?</div><div class='default'><table cellpadding='0' cellspacing='0'
+width='95%' border='0'><tr valign='baseline'><td width='4%'><div class='choice'>A</div></td><td
+width='46%'><span class='default'>true</span></td><td width='4%'><div class='choice'>B</div></td><td
+width='46%'><span class='default'>false</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:49' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;49.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><span class='font3'>x &amp;&amp; y &amp;&amp; z</span></span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:50' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;50.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><span class='font3'>x &amp;&amp; y || z &amp;&amp; y</span></span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:51' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;51.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><span class='font3'>!(x &amp;&amp; y) || z</span></span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:52' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;52.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><span class='font3'>!(x || y) &amp;&amp; z</span></span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:53' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;53.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><span class='font3'>x &amp;&amp; Y || z</span></span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='java_nitro_-_test_3_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='java_nitro_-_test_3_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
